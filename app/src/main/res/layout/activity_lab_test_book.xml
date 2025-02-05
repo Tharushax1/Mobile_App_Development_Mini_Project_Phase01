@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_tt3"
+    tools:context=".LabTestBookActivity">
+
+    <TextView
+        android:id="@+id/textViewLTB"
+        android:layout_width="271dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="Healthcare 24x7"
+        android:textColor="@color/yellow"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTB4" />
+
+    <TextView
+        android:id="@+id/textViewLTB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Fill All Details For Booking"
+        android:textColor="@color/white_secondary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTB" />
+
+    <EditText
+        android:id="@+id/editTextLTBName"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/vlight_green"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLTB2" />
+
+    <EditText
+        android:id="@+id/editTextLTBAddress"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/vlight_green"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBName" />
+
+    <EditText
+        android:id="@+id/editTextLTBPincode"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Pincode"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/vlight_green"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
+
+    <EditText
+        android:id="@+id/editTextLTBContact"
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/vlight_green"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPincode" />
+
+    <Button
+        android:id="@+id/buttonLTBBooking"
+        android:layout_width="240dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/blue"
+        android:text="BOOK"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
+
+    <Button
+        android:id="@+id/buttonLTBBack"
+        android:layout_width="189dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/blue"
+        android:text="Back"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLTB4"
+        android:layout_width="256dp"
+        android:layout_height="74dp"
+        android:fontFamily="cursive"
+        android:text="Happy Bunny "
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
